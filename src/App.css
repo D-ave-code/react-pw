@@ -1,38 +1,40 @@
-.App {
+.App{
+  width: 100%;
+  min-height: 100vh;
+}
+main{
+  width: 90%;
+  box-sizing: content-box;
+  min-height: 100vh;
+  background: #fff;
+  margin: auto;
+  margin-top: 20px;
+}
+.nombre-titulo{
+  width: 100%;
+  min-height: auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nombre-titulo h1{
+  font-size: 50px;
+  margin: 0;
+  padding: 60px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carrtio-boton{
+  width: 100%;
+  height:58px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.carrtio-boton a{
+  display: block;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background: #bbb;
+  text-decoration: none;
+  color: #fffd;
+  text-align: center;
+  line-height: 58px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carrtio-boton a:hover{
+  background: #a6a5a5;
 }
