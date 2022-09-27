@@ -12,11 +12,20 @@ export function Home(){
             <CardShop/>
             <CardShop/>
             <div className='etiq-home'>
-                    <h1>!Cosigelo¡</h1>
-                    <h2>Un descuento del 40%</h2>
+                    <h2> !Cosigelo¡ <br/>
+                    Un descuento del 40%</h2>
             </div>
             <CardShop/>
-            
+            <div className='nav-home-produc'>
+                <ul>
+                    <li>Recien Llegado</li>
+                    <li>Populares</li>
+                    <li>Mejores vendidos</li>
+                </ul>
+            </div>
+            <div className='cont-productos'>
+
+            </div>
             </div>
         </div>
     )
