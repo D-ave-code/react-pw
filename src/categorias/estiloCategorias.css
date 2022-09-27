@@ -1,0 +1,38 @@
+.contCategorias{
+    width: 100%;
+    min-height: 58px;
+    padding-top: 23px;
+}
+.bot-categoria{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align:  center;
+    color: #fff;
+    background: #f4bf1e;
+    border-bottom: 1px solid #d5a617;
+    line-height: 58px;
+}
+.bot-categoria:hover{
+    background: #e4b21a;
+}
+.contCategorias ul{
+    width: 80%;
+    height: 0px;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+   
+}
+.contCategorias ul li{
+    color: #fff;
+    height: 58px;
+    padding-left: 20px;
+    line-height: 58px;
+    background: #f4bf1e;
+    text-transform: uppercase;
+}
+.contCategorias ul li:hover{
+    background:#e4b21a ;
+}

@@ -1,0 +1,46 @@
+.carrucel{
+    position: relative;
+    width: 80%;
+    height: 138px;
+    margin: auto;
+   overflow: hidden;
+}
+.cont-carr{
+  position: relative;
+    display: flex;
+    width: calc(100%*3);
+    height: 100%;
+    background: yellow;
+    transition: all 1s;
+}
+.contImg{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+    background-color: red;
+}
+.cont-circulos{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    top: 75%;
+    left: 5%;
+    width: 20%;
+    height: 18px;
+}
+.cont-circulos .circulo{
+    width: 15px;
+    height: 15px;
+    background: #6c4b30;
+    border-radius: 13px;
+}
+
+.circulo:hover{
+    background: #f4bf1e;
+}
+.contImg img{
+    width: 100%;
+    height: 100%;
+}

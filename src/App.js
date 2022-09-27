@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './header/Header';
 import { BarraBusqueda } from './barrabusqueda/BarraBuscar';
+import { Categorias } from './categorias/Categorias';
+import { Home } from './home/Home';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,8 @@ function App() {
        <div className='carrtio-boton'>
           <a href="/">Carrito Vacio</a>
        </div>
+        <Categorias/>
+        <Home/>
       </main>
     </div>
   );
