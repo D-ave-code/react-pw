@@ -1,0 +1,21 @@
+.producto-card{
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    border: 1px solid #bbb;
+    margin-top: 40px;
+}
+.cont-img-produc{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    top: -20px;
+    border: 1px solid #bbb;
+    margin: auto;
+    background: #fff;
+    padding: 9px;
+}
+.cont-img-produc img{
+    width: 100%;
+    height: 100%;
+}

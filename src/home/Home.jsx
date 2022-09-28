@@ -2,6 +2,7 @@
 import './estiloHome.css'
 import { Carrucel } from './comp-carrucel/carrucel'
 import { CardShop } from './comp-card/CardShop'
+import { TarjetaProcucto } from '../productos/TarjerjosProductos'
 export function Home(){
     return(
         <div className='Home'>
@@ -24,7 +25,9 @@ export function Home(){
                 </ul>
             </div>
             <div className='cont-productos'>
-
+                <TarjetaProcucto/>
+                <TarjetaProcucto/>
+                <TarjetaProcucto/>
             </div>
             </div>
         </div>

@@ -33,3 +33,8 @@
 .nav-home-produc li:hover{
     color: #000;
 }
+.cont-productos{
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 40px;
+}

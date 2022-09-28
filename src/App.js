@@ -20,6 +20,9 @@ function App() {
         <Categorias/>
         <Home/>
       </main>
+      <footer>
+         Footer
+      </footer>
     </div>
   );
 }
