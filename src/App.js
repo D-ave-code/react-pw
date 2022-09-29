@@ -3,9 +3,13 @@ import { Header } from './header/Header';
 import { BarraBusqueda } from './barrabusqueda/BarraBuscar';
 import { Categorias } from './categorias/Categorias';
 import { Home } from './home/Home';
+import { PSesion } from './pagina-sesion/iniciarSesion';
+import { FooterP } from './footer/Footer';
+import {HashRouter,Route,Routes} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+       <HashRouter>
       <header className="App-header">
         <Header/>
       </header>
@@ -18,10 +22,14 @@ function App() {
           <a href="/">Carrito Vacio</a>
        </div>
         <Categorias/>
-        <Home/>
+            <Routes>
+                  <Route path = "/" element = {<Home/>} />
+                 <Route path = "/sesion" element = {<PSesion/>} />
+            </Routes>
       </main>
+      </HashRouter>
       <footer>
-         Footer
+         <FooterP/>
       </footer>
     </div>
   );

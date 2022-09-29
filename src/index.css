@@ -1,10 +1,8 @@
+*{
+  font-family: "Ubuntu",sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
   background: #28282828;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

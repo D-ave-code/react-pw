@@ -1,0 +1,43 @@
+.cont-footer{
+    width: 80%;
+    margin: auto;
+}
+.cont-title-foot h1{
+    margin-bottom: 0;
+}
+.cont-title-foot h6{
+    text-transform: uppercase;
+    color: #a5a4a4;
+    margin-top: 10px;
+}
+.cont-lis-footer{
+    width: 100%;
+    min-height: 100%;
+    list-style: none;
+    padding: 0;
+}
+.item-footer{
+    width: 100%;
+    min-height: 100%;
+}
+.item-footer h4{
+    width: 100%;
+    font-weight: 100;
+    margin: 6px 0 25px;
+    padding: 0 0 13px;
+    border-bottom: 1px solid #a5a4a4;
+    font-size: 20px;
+    text-transform: uppercase;
+   
+}
+.cont-lis-footer ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+.cont-lis-footer ul li{
+    font-size: 13px;
+    color: #bbb;
+    padding: 0 0 9px;
+}

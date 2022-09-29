@@ -38,3 +38,7 @@ main{
 .carrtio-boton a:hover{
   background: #a6a5a5;
 }
+footer{
+  width: 100%;
+  min-height: 50vh;
+}

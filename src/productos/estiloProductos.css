@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 500px;
     margin: auto;
-    border: 1px solid #bbb;
+    border:  1px solid #e3e7e8;
     margin-top: 40px;
 }
 .cont-img-produc{
@@ -10,7 +10,7 @@
     width: 80%;
     height: 400px;
     top: -20px;
-    border: 1px solid #bbb;
+    border:  1px solid #e3e7e8;
     margin: auto;
     background: #fff;
     padding: 9px;
@@ -18,4 +18,51 @@
 .cont-img-produc img{
     width: 100%;
     height: 100%;
+}
+.cont-estrellas{
+    text-align: center;
+    height: 30px;
+}
+.descrip-producto{
+    width: 80%;
+    margin: auto;
+}
+.descrip-producto p{
+    font-size: 11px;
+    color: #999e9f;
+    margin: 0 0 21px;
+
+}
+.cont-precio{
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.cont-btn-producto{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    padding-bottom :10px ;
+}
+.cont-btn-producto .btn{
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    padding: 8px  19px;
+}
+.cont-btn-producto .add-carrito{
+    color: #f4bf1e;
+   
+}
+.cont-btn-producto .ver-mas{
+    color: #999e9f;
+}
+.cont-btn-producto .add-carrito:hover{
+    background: #f4bf1e;
+    color: #fff;
+}
+.cont-btn-producto .ver-mas:hover{
+    background:#e5e5e5;
 }
