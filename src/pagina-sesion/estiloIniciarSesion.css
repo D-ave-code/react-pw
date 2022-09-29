@@ -1,6 +1,5 @@
 .InicioSesion{
-    display: flex;
-    align-items: center;
+   padding-top: 20px;
     width: 100%;
     min-height: 50vh;
 }
