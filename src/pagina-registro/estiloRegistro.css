@@ -1,15 +1,14 @@
-.InicioSesion{
-    display: flex;
-    align-items: center;
+.Registro{
     width: 100%;
     min-height: 50vh;
-}
-.formulario-sesion{
-    width: 80%;
-    margin: 0 auto 0 ;
     text-align: center;
+    padding: 20px 0 20px;
 }
-.formulario-sesion input{
+.form-registro{
+    width: 80%;
+    margin: auto;
+}
+.form-registro input{
     width: 70%;
     height: 40px;
     border: 1px solid #e5e5e5;
@@ -18,17 +17,17 @@
     margin-top: 20px;
     font-style: italic;
 }
-.formulario-sesion button{
+.form-registro button{
     display: block;
     margin: auto;
     width: 40%;
-    height: 30px;
+    height: 35px;
     margin-top: 20px;
     color: #fff;
     background: #f4bf1e;
-   border: none;
-   font-weight: 600;
+    border: none;
+    font-weight: 600;
 }
-.formulario-sesion button:hover{
+.form-registro button:hover{
     background: #e4b21a ;
 }

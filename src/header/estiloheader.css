@@ -1,16 +1,15 @@
 .navegacion{
     display: flex;
     width: 100%;
-    height: 70px;
-    margin-top: 5px;
-    justify-content: center;
+    height: 60px;
+    padding-top: 15px;
+    justify-content: space-around;
 }
 .btn-inicio{
     width: 25%;
     background: #f4bf1e;
-    margin: 1px;
     text-align: center;
-    line-height: 70px;
+    line-height: 60px;
 }
 .btn-inicio a:hover{
     background: #e4b21a;
@@ -22,4 +21,5 @@
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+    font-weight: 600;
 }

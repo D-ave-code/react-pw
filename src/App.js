@@ -5,6 +5,7 @@ import { Categorias } from './categorias/Categorias';
 import { Home } from './home/Home';
 import { PSesion } from './pagina-sesion/iniciarSesion';
 import { FooterP } from './footer/Footer';
+import { Pregistro } from './pagina-registro/pagina-registro';
 import {HashRouter,Route,Routes,Link} from 'react-router-dom'
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Routes>
                   <Route path = "/" element = {<Home/>} />
                  <Route path = "/sesion" element = {<PSesion/>} />
+                 <Route path="/registrar" element={<Pregistro/>}/>
             </Routes>
       </main>
      
