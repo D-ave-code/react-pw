@@ -5,17 +5,18 @@ import { Categorias } from './categorias/Categorias';
 import { Home } from './home/Home';
 import { PSesion } from './pagina-sesion/iniciarSesion';
 import { FooterP } from './footer/Footer';
-import {HashRouter,Route,Routes} from 'react-router-dom'
+import {HashRouter,Route,Routes,Link} from 'react-router-dom'
 function App() {
   return (
+    <HashRouter>
     <div className="App">
-       <HashRouter>
+       
       <header className="App-header">
         <Header/>
       </header>
       <main>
         <div className='nombre-titulo'>
-          <h1>Zapatos</h1>
+          <Link to='/'>Zapatos</Link>
         </div>
        <BarraBusqueda/>
        <div className='carrtio-boton'>
@@ -27,11 +28,12 @@ function App() {
                  <Route path = "/sesion" element = {<PSesion/>} />
             </Routes>
       </main>
-      </HashRouter>
+     
       <footer>
          <FooterP/>
       </footer>
     </div>
+    </HashRouter>
   );
 }
 

@@ -1,19 +1,14 @@
 import './estiloIniciarSesion.css'
-var bandera= 0;
 export function PSesion(){
-    function desplegarF(e){
-        if(bandera === 0){
-            e.target.style.color = 'red'
-            console.log(e.target.style.color)
-            bandera=1;
-        }else{
-            e.target.style.color = 'green'
-            bandera=0
-        }
-    }
+    
     return(
         <div className='InicioSesion'>
-               <h1 onClick={desplegarF}> AQUI SE INICIARA SESION</h1>
+              <form action="" className='formulario-sesion'>
+              <h2>Iniciar Sesion</h2>
+                    <input type="text" placeholder='Correo electronico' />
+                    <input type="password" placeholder='Contraseña' />
+                    <button>Iniciar</button>
+              </form>
         </div>
     )
 }

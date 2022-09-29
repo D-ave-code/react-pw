@@ -1,0 +1,33 @@
+.InicioSesion{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+}
+.formulario-sesion{
+    width: 80%;
+    margin: 0 auto 0 ;
+    text-align: center;
+}
+.formulario-sesion input{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    padding-left: 15px;
+    outline: none;
+    margin-top: 20px;
+    font-style: italic;
+}
+.formulario-sesion button{
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 30px;
+    margin-top: 20px;
+    color: #fff;
+    background: #f4bf1e;
+   border: none;
+}
+.formulario-sesion button:hover{
+    background: #e4b21a ;
+}
