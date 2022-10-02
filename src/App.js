@@ -26,7 +26,7 @@ function App() {
         <Categorias/>
             <Routes>
                   <Route path = "/" element = {<Home/>} />
-                 <Route path = "/sesion" element = {<PSesion/>} />
+                 <Route path = "/sesion" element = {<PSesion/>}/>
                  <Route path="/registrar" element={<Pregistro/>}/>
             </Routes>
       </main>
