@@ -34,8 +34,8 @@ export function Pregistro() {
                 <input type="text" placeholder='Apellido' />
                 <input type="text" placeholder='Correo electronico' value={mail} onChange={setCorreo} />
                 <input type="text" placeholder='Numero Telefono' />
-                <input type="password" name='contraseña1' value={pass}  onChange={setContra} placeholder='Contraseña' />
-                <input type="password" name='contraseña2' placeholder='Confirmar contraseña' />
+                <input type="password" name='contraseña1' value={pass}  onChange={setContra} placeholder='Contraseña' autoComplete='on' />
+                <input type="password" name='contraseña2' placeholder='Confirmar contraseña' autoComplete='on' />
                 <button type='submit'>Registrarse</button>
             </form>
         </div>

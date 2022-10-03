@@ -9,7 +9,7 @@ export function PSesion(){
             email:correo,
             password:pass
         }
-        obtenerToken(datos)
+       obtenerToken(datos)
     }
     const setMail= (e)=>{
         setCorreo(e.target.value)
@@ -22,7 +22,7 @@ export function PSesion(){
               <form onSubmit={iniciarSesion} action="POST" className='formulario-sesion'>
               <h2>Iniciar Sesion</h2>
                     <input type="text" value={correo} onChange={setMail} placeholder='Correo electronico' />
-                    <input type="password" value={pass} onChange={setContra} placeholder='Contraseña' />
+                    <input type="password" value={pass} onChange={setContra} placeholder='Contraseña' autoComplete='on' />
                     <button type='submit'>Iniciar</button>
               </form>
         </div>
