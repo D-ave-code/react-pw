@@ -1,0 +1,25 @@
+.Admin{
+    width: 100%;
+    min-height: 50vh;
+}
+.cont-nav-admin{
+    width: 100%;
+    min-height: 53px;
+}
+.cont-nav-admin ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    min-height: 53px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+.cont-nav-admin ul li{
+    padding: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid #aeaeae;
+    margin: 5px;
+}
