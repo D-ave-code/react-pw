@@ -1,7 +1,9 @@
 export function AddImg(){
     return(
         <div className="AddImg">
-           <input type="text" placeholder="ingrese una url" />
+           <form action="POST" method="post">
+                <input type="text" placeholder="ingrese url de la imgen" />
+           </form>
         </div>
     )
 }

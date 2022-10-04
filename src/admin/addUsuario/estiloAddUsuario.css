@@ -1,0 +1,59 @@
+.AddUsuario{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 90%;
+    min-height: 100%;
+    margin: auto;
+}
+.formularioAddUsuario{
+    width: 40%;
+    height: 100%;
+    background: blue;
+    padding-top:20px ;
+    padding-bottom:20px ;
+    text-align: center;
+}
+.formularioAddUsuario input{
+   display: block;
+   margin: auto;
+  margin-top: 10px;
+}
+.formularioAddUsuario button{
+    margin-top: 20px;
+}
+.cont-lis-usuarios{
+    width: 60%;
+    height: 100%;
+    background: green;
+}
+.cont-lis-usuarios ul{
+    display: flex;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.categoria-usuarios{
+    height: 40px;
+}
+.categoria-usuarios li{
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.categoria-usuarios li:nth-child(1){
+    width: 20%;
+}
+.categoria-usuarios li:nth-child(2){
+    width: 30%;
+}
+.categoria-usuarios li:nth-child(4){
+    width: 40%;
+}
+.usuario-list{
+    height: 300px;
+    border-top: 1px solid #aeae ; 
+}
+

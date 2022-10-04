@@ -1,0 +1,35 @@
+.Item{
+    display: flex;
+    width: 100%;
+    height: 53px;
+    background: black;
+    color:#fff;
+}
+.cont-id{
+    width: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 53px;
+}
+.cont-nombre{
+    width: 20%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 53px;
+}
+.cont-correo{
+    width: 30%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 53px;
+}
+.cont-pass{
+    width: 30%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 53px;
+}
