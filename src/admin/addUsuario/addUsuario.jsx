@@ -19,6 +19,10 @@ export function AddUsuario() {
                 </ul>
                 <div className='usuario-list'>
                     <ItemUsuario/>
+                    <ItemUsuario/>
+                    <ItemUsuario/>
+                    <ItemUsuario/>
+                    <ItemUsuario/>
                 </div>
             </div>
         </div>
