@@ -23,7 +23,7 @@ export function AddUsuario() {
                 <h2>Añadir Usuario</h2>
                 <input type="text" placeholder="Nombre" />
                 <input type="text" placeholder="Correo" />
-                <input type="password" placeholder="Contraseña" />
+                <input type="password" placeholder="Contraseña" autoComplete='on'/>
                 <button>Añadir</button>
             </form>
             <div className='cont-lis-usuarios'>
