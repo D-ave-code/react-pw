@@ -5,7 +5,12 @@ const url = 'http://127.0.0.1:8000/api/v1/admin/users'
 export function AddUsuario() {
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
-        const response = await fetch(url)
+        const response = await fetch(url,{
+            method:'GET',
+            headers:{
+                'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjUwMDgwNTQsImV4cCI6MTY2NTAxMTY1NCwibmJmIjoxNjY1MDA4MDU0LCJqdGkiOiJqU3VGdlB1V1Y1d29OdHlmIiwic3ViIjozLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i318Vp3hZlcO4MTD5AtD6NS_afAxYye8VFs3cGh9064'
+            }
+    })
         const responseJSON = await response.json()
         setTodos(responseJSON)
     }
@@ -29,7 +34,7 @@ export function AddUsuario() {
                     <li>Contraseña</li>
                 </ul>
                 <div className='usuario-list'>
-                    {!todos ? 'Cargando' :
+                    {!todos ? 'Cargando...' :
                         todos.map((todo, index) => {
                             return <h1 key={index}><ItemUsuario
                                 id={todo.id}
