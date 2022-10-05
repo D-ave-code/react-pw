@@ -1,15 +1,15 @@
 .AddUsuario{
     display: flex;
     flex-wrap:wrap ;
-    justify-content: space-around;
     width: 90%;
     min-height: 100%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: center;
 }
 .formularioAddUsuario{
-    width: 30%;
+    min-width: 40%;
     height: 100%;
     padding-top:20px ;
     padding-bottom:20px ;
@@ -24,17 +24,16 @@
     margin-top: 20px;
 }
 .cont-lis-usuarios{
-    width: 60%;
+    min-width: 60%;
     height: 100%;
-    border: 1px solid #bbb;
 }
 .cont-lis-usuarios ul{
     display: flex;
     margin: auto;
     list-style: none;
+    border: 1px solid #bbb;
     padding: 0;
 }
-
 .categoria-usuarios{
     height: 40px;
 }
@@ -43,7 +42,7 @@
     line-height: 40px;
     text-align: center;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px;    
 }
 .categoria-usuarios li:nth-child(1){
     width: 20%;
@@ -57,5 +56,6 @@
 .usuario-list{
     height: 300px;
     border-top: 1px solid #aeae ; 
+    border: 1px solid #bbb;
 }
 

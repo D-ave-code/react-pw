@@ -1,9 +1,14 @@
 import './estiloAdmin.css'
 import { AddImg } from './addImagen/addImagen'
+import { AddTipProducto } from './addTProduc/addTproducto'
+import { AddEmpresas } from './addEmpresa/addEmpresa'
+import { AddTipoPersona } from './addTPersonas/addPersona'
+import { AddProducto } from './addProductos/addProductos'
+import { AddMarcas } from './addMarcas/addMarcas'
 import { AddUsuario } from './addUsuario/addUsuario'
 import { useState } from 'react'
 export function AdminPage() {
-    const [componete, setComponente] = useState(<AddUsuario/>)
+    const [componete, setComponente] = useState(<AddImg/>)
 
     const setCompo = (e) => {
         switch (e.target.id) {
@@ -11,19 +16,19 @@ export function AdminPage() {
                 setComponente(<AddImg/>)
                 break;
             case '1':
-                setComponente(<AddImg/>)
+                setComponente(<AddTipProducto/>)
                 break;
             case '2':
-                setComponente(<AddImg/>)
+                setComponente(<AddMarcas/>)
                 break;
             case '3':
-                setComponente(<AddImg/>)
+                setComponente(<AddTipoPersona/>)
                 break;
             case '4':
-                setComponente(<AddImg/>)
+                setComponente(<AddProducto/>)
                 break;
             case '5':
-                setComponente(<AddImg/>)
+                setComponente(<AddEmpresas/>)
                 break;
             case '6':
                 setComponente(<AddUsuario/>)

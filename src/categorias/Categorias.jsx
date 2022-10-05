@@ -1,4 +1,5 @@
 import './estiloCategorias.css'
+import { Link } from 'react-router-dom';
 import { useState } from 'react'
 var cont = 0 ;
 export function Categorias(){
@@ -17,12 +18,12 @@ export function Categorias(){
     return(
         <div className="contCategorias">
             <div className="bot-categoria"  onClick={desplegar}>CATEGORIAS</div>
-            <ul style={sizeC}>
-                <li>Mujeres</li>
-                <li>Hombres</li>
-                <li>Jovenes</li>
-                <li>Niños</li>
-                <li>Accesorios</li>
+            <ul onClick={desplegar} style={sizeC}>
+                <li><Link to="/Catalogo/mujeres">Mujeres</Link></li>
+                <li><Link to="/Catalogo/hombres">Hombres</Link></li>
+                <li><Link to="/Catalogo/jovenes">Jovenes</Link></li>
+                <li><Link to="/Catalogo/ninos">Niños</Link></li>
+                <li><Link to="/Catalogo/accsesorios">Accesiorios</Link></li>
             </ul>
         </div>
     )

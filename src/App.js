@@ -8,6 +8,7 @@ import { FooterP } from './footer/Footer';
 import { Pregistro } from './pagina-registro/pagina-registro';
 import { AdminPage } from './admin/Admin';
 import {HashRouter,Route,Routes,Link} from 'react-router-dom'
+import { Catalogo } from './catalogos/Catagolo';
 function App() {
 
   return (
@@ -30,6 +31,7 @@ function App() {
                     <Route path = "/sesion" element = {<PSesion/>}/>
                     <Route path="/registrar" element={<Pregistro/>}/>
                     <Route path='/admin' element={<AdminPage/>} />
+                    <Route path='/Catalogo/:categoria' element={<Catalogo/>}/>
                 </Routes>
           </main>
         

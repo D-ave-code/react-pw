@@ -26,12 +26,15 @@
    
 }
 .contCategorias ul li{
-    color: #fff;
     height: 58px;
     padding-left: 20px;
     line-height: 58px;
     background: #f4bf1e;
     text-transform: uppercase;
+}
+.contCategorias ul li a{
+    color: #fff;
+    text-decoration: none;
 }
 .contCategorias ul li:hover{
     background:#e4b21a ;
