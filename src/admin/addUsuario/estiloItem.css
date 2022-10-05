@@ -4,6 +4,8 @@
     height: 53px;
     color: #333;
     border-bottom: 1px solid #aeaeae;
+    font-size: 13px;
+    font-weight: 100;
 }
 .Item:hover{
     background: #eee;

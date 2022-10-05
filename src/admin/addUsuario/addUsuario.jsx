@@ -1,6 +1,17 @@
 import './estiloAddUsuario.css'
 import { ItemUsuario } from './itemUsuario'
+import { useState, useEffect } from 'react'
+const url = 'http://127.0.0.1:8000/api/v1/admin/users'
 export function AddUsuario() {
+    const [todos, setTodos] = useState()
+    const fetchApi = async () => {
+        const response = await fetch(url)
+        const responseJSON = await response.json()
+        setTodos(responseJSON)
+    }
+    useEffect(() => {
+        fetchApi()
+    }, [])
     return (
         <div className="AddUsuario">
             <form className='formularioAddUsuario' action="">
@@ -18,11 +29,17 @@ export function AddUsuario() {
                     <li>Contraseña</li>
                 </ul>
                 <div className='usuario-list'>
-                    <ItemUsuario/>
-                    <ItemUsuario/>
-                    <ItemUsuario/>
-                    <ItemUsuario/>
-                    <ItemUsuario/>
+                    {!todos ? 'Cargando' :
+                        todos.map((todo, index) => {
+                            return <h1 key={index}><ItemUsuario
+                                id={todo.id}
+                                nombre={todo.name}
+                                correo={todo.email}
+                                pass={todo.password}
+                            /></h1>
+
+                        })
+                    }
                 </div>
             </div>
         </div>
