@@ -8,7 +8,7 @@ export function AddUsuario() {
         const response = await fetch(url,{
             method:'GET',
             headers:{
-                'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjUwMDgwNTQsImV4cCI6MTY2NTAxMTY1NCwibmJmIjoxNjY1MDA4MDU0LCJqdGkiOiJqU3VGdlB1V1Y1d29OdHlmIiwic3ViIjozLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i318Vp3hZlcO4MTD5AtD6NS_afAxYye8VFs3cGh9064'
+                'Authorization':'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NjUwNzA0NDIsImV4cCI6MTY2NTA3NDA0MiwibmJmIjoxNjY1MDcwNDQyLCJqdGkiOiI3RGQ5dkZLbzlxU2ptdXF0Iiwic3ViIjozLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ac-bopHvKmk0OpESFHzuyBr0wZnLPYx5P2jVzDxZiI4'
             }
     })
         const responseJSON = await response.json()
