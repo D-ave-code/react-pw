@@ -3,14 +3,13 @@ import { Header } from './header/Header';
 import { BarraBusqueda } from './barrabusqueda/BarraBuscar';
 import { Categorias } from './categorias/Categorias';
 import { Home } from './home/Home';
-import { PSesion } from './pagina-sesion/iniciarSesion';
+import { PSesion, getToken} from './pagina-sesion/iniciarSesion';
 import { FooterP } from './footer/Footer';
 import { Pregistro } from './pagina-registro/pagina-registro';
-import { AdminPage } from './admin/Admin';
 import {HashRouter,Route,Routes,Link} from 'react-router-dom'
 import { Catalogo } from './catalogos/Catagolo';
+import { AuthUsers } from './AuthUsers';
 function App() {
-
   return (
     <HashRouter>
     <div className="App">
@@ -30,7 +29,7 @@ function App() {
                     <Route path = "/" element = {<Home/>} />
                     <Route path = "/sesion" element = {<PSesion/>}/>
                     <Route path="/registrar" element={<Pregistro/>}/>
-                    <Route path='/admin' element={<AdminPage/>} />
+                    <Route path='/usuario'element={<AuthUsers/>}/>
                     <Route path='/Catalogo/:categoria' element={<Catalogo/>}/>
                 </Routes>
           </main>

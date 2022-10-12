@@ -28,7 +28,7 @@ export function Pregistro() {
     }
     return (
         <div className='Registro'>
-            <form onSubmit={enviar} action="POST" className='form-registro'>
+            <form onSubmit={enviar}  className='form-registro'>
                 <h2>Crea una cuenta</h2>
                 <input type="text" placeholder='Nombre' value={nombre} onChange={setNom} />
                 <input type="text" placeholder='Apellido' />

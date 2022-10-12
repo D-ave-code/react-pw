@@ -1,30 +1,54 @@
 import './estiloCatalogo.css'
 import { TarjetaProcucto } from '../productos/TarjerjosProductos'
 import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 let titulo
+var urlP = 'http://127.0.0.1:8000/api/prod/';
+let c =0;
 export function Catalogo() {
+    const [productos,setProductos] = useState();
     let { categoria } = useParams()
     switch (categoria) {
         case 'mujeres':
             titulo = 'Mujeres'
+            c = 2
             break;
         case 'hombres':
             titulo = 'Hombres'
+            c = 1
             break;
         case 'jovenes':
             titulo = 'Jovenes'
+            c = 4
             break;
         case 'ninos':
             titulo = 'Niños'
+            c = 3
             break;
         case 'accsesorios':
             titulo = 'Accesorios'
+            c = 4
             break;
-
         default:
             break;
     }
+    useEffect(()=>{
+       obtenerProductos(c)
+    },[categoria])
+    const obtenerProductos= async(c) => {
+        try{
+            const respuesta = await fetch(urlP+c,{
+                method: 'GET',
+            })
+            const data = await respuesta.json()
+            setProductos(data)
+        }catch(e){
+            console.log(e)
+        }
+          
+    }
+
     return (
         <div className='Catalogo'>
             <div className='cont-tag'>
@@ -77,10 +101,21 @@ export function Catalogo() {
                     </select>
                 </div>
                 <div className='cont-productos'>
-                    <TarjetaProcucto />
-                    <TarjetaProcucto />
-                    <TarjetaProcucto />
-                    <TarjetaProcucto />
+                    {
+                        !productos ? 'Cargando...' :
+                        productos.map((producto, index) => {
+                            return <TarjetaProcucto key={index}
+                                id = {producto.id}
+                                nombre={producto.nombre}
+                                precio={producto.precio}
+                                descripcion={producto.descripcion}
+                                id_tipo_productos = {producto.id_tipo_productos}
+                                id_marcas = {producto.id_marcas}
+                                id_tipo_personas = {producto.id_tipo_personas}
+                                imgP = {producto.imagenP}
+                            />
+                        })
+                    }
                 </div>
             </div>
         </div>
