@@ -31,3 +31,14 @@
 .formulario-sesion button:hover{
     background: #e4b21a ;
 }
+
+.mensaje-error{
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 17px;
+    margin-top: 20px;
+    font-weight: 600;
+    color:#C90000;
+}

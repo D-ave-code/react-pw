@@ -1,25 +1,25 @@
 import './estiloIniciarSesion.css'
-import { validarCorreo } from '../validaciones'
+import { validarCorreo} from '../validaciones'
 import { useState } from 'react'
-import { Navigate } from 'react-router';
 let toke_acces = '';
 export function PSesion() {
     const [correo, setCorreo] = useState('')
     const [pass, setPass] = useState('')
-    const [error, setError] = useState('')
-    const [flag_r, setFlag_r] = useState(false)
+    const [error, setError] = useState()
+    
     const iniciarSesion = (e) => {
         e.preventDefault()
         const datos = {
             email: correo,
             password: pass
         }
-        console.log(validarCorreo(correo))
-        if(validarCorreo(correo)&pass){
-                console.log('llena los datos gil')
-                setError(<div>Error ingrese bien los datos</div>)
-        }else{
+        
+        if(validarCorreo(correo)){
+          
             obtenerToken(datos)
+        }else{
+            
+            setError(<div className='mensaje-error'>El correo electrónico no es correcto que has introducido no está conectado a una cuenta o esta mal escrito.</div>)
         }
        
        
